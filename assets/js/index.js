@@ -5,28 +5,6 @@ if (peopleRaw != null) {
     var people = []
 }
 
-var people = [
-    {
-        name: 'Maria julia Lopes',
-        tel: '11954628362',
-        xp: true
-    },
-    {
-        name: 'André Galvão Nascimento',
-        tel: '11954628362',
-        xp: false
-    },
-    {
-        name: 'Gabriela Falcão Santiago Lima',
-        tel: '954628362',
-        xp: true
-    },
-    {
-        name: 'Mário Queiroz Tamarin Dos Arcos',
-        tel: '11954628362',
-        xp: true
-    }
-];
 
 function desenhaTabela() {
 
