@@ -14,7 +14,7 @@
         <img src="./assets/img/newtab.png" style="width: 226px;">
     </header style>
     <div class=menu>
-        <a href="./index.html">
+        <a href="./index.html" id="goHome">
             Listagem
         </a>
         <a href="./form.html">
@@ -22,26 +22,26 @@
         </a>
     </div>
 
-    <section class="formulario">
-        <form>
+    <section class="formulario ">
+        <form onsubmit="testaFormulario(event); return false">
             <div class="linha-formulario">
                 <label class="label-grande" for="name"> Nome:</label>
                 <input name="name" id="name" required-type="text">
-            </div> </br>
+            </div> 
 
             <div class="linha-formulario">
                 <label class="label-grande" for="telefone"> Telefone:</label>
-                <input name="telefone" id="telefone" required-type="number">
-            </div> </br>
+                <input name="tel" id="tel" required-type="number">
+            </div> 
 
             <div class="linha-formulario" style="display:flex">
                 <label class="label-grande">Experiencia prévia:</label>
                 <div style="display: inline-block; width: 40%;">
-                    <input type="radio" name="xp" id="xp-yes"> <label for="xp-yes">
+                    <input type="radio" name="xp" id="xp-yes" value="true"> <label for="xp-yes">
                         Sim
                     </label>
-                    </br>
-                    <input type="radio" name="xp" id="xp-no"> <label for="xp-no">
+                   
+                    <input type="radio" name="xp" id="xp-no" value="false"> <label for="xp-no">
                         Não
                     </label>
                 </div>
@@ -53,6 +53,7 @@
 
         </form>
     </section>
+    <script src="./assets/js/form.js"></script>
 </body>
 
 </html>

@@ -14,10 +14,8 @@ function testaFormulario(e) {
         xp: (e.target.elements['xp'].value == 'true' )
     })
 
+    
+    localStorage.setItem('people', JSON.stringify(people)) // correto!
 
-    localStorage.setItem('people', Json.stringify(people))
-
-    document.getElementById('goHome').click()
-
-    console.log(people)
+  
 }
