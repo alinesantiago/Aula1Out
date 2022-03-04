@@ -17,5 +17,5 @@ function testaFormulario(e) {
     
     localStorage.setItem('people', JSON.stringify(people)) // correto!
 
-  
+    document.getElementById('goHome').click()
 }
