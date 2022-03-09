@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./assets/css/list.css">
     <link rel="stylesheet" href="./assets/css/form.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,34 +27,36 @@
     </div>
 
     <section class="formulario ">
-        <form onsubmit="testaFormulario(event); return false">
-            <div class="linha-formulario">
-                <label class="label-grande" for="name"> Nome:</label>
-                <input name="name" id="name" required-type="text">
-            </div> 
+        <form onsubmit="testaFormulario(event); return false" class="cadastro">
+            <div class="form-pai">
+                <div class="linha-formulario">
+                    <label class="label-grande" for="name"> Nome:</label>
+                    <input name="name" id="name" required-type="text">
+                </div>
 
-            <div class="linha-formulario">
-                <label class="label-grande" for="telefone"> Telefone:</label>
-                <input name="tel" id="tel" required-type="number">
-            </div> 
+                <div class="linha-formulario">
+                    <label class="label-grande" for="telefone"> Telefone:</label>
+                    <input name="tel" id="tel" required-type="number" required-type="text"
+                        onblur="testaCampo(this.value)" onfocus="this.value '' ">
+                </div>
 
-            <div class="linha-formulario" style="display:flex">
-                <label class="label-grande">Experiencia prévia:</label>
-                <div style="display: inline-block; width: 40%;">
-                    <input type="radio" name="xp" id="xp-yes" value="true"> <label for="xp-yes">
-                        Sim
-                    </label>
-                   
-                    <input type="radio" name="xp" id="xp-no" value="false"> <label for="xp-no">
-                        Não
-                    </label>
+                <div class="linha-formulario" style="display:flex">
+                    <label class="label-grande">Experiencia prévia:</label>
+                    <div style="display: inline-block; width: 40%;">
+                        <input type="radio" name="xp" id="xp-yes" value="true"> <label for="xp-yes">
+                            Sim
+                        </label>
+                        <br>
+                        <input type="radio" name="xp" id="xp-no" value="false"> <label for="xp-no">
+                            Não
+                        </label>
+                    </div>
+                </div>
+
+                <div class="linha-formulario">
+                    <input type="submit" value="Salvar">
                 </div>
             </div>
-
-            <div class="linha-formulario">
-                <input type="submit" value="Salvar">
-            </div>
-
         </form>
     </section>
     <script src="./assets/js/form.js"></script>
